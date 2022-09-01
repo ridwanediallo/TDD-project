@@ -30,4 +30,25 @@ describe Solver do
       expect(solve.reverse("ridwan")).to be("nawdir")
     end
   end
+
+  describe "#fizzbuzz" do
+    it "should return the correct string" do
+        expect(solve.fizzbuzz(3)).to be("fizz")
+    end
+
+    it "should return the correct string" do
+        expect(solve.fizzbuzz(5)).to be("buzz")
+    end
+
+    it "should return the correct string" do
+        expect(solve.fizzbuzz(15)).to be("fizzbuzz")
+    end
+
+    it "should return the correct string" do
+        expect(solve.fizzbuzz(7)).to be("7")
+    end
+
+    end
+
+  end
 end
