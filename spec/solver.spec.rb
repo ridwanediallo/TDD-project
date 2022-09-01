@@ -1,25 +1,26 @@
-require_relative '../solver'
+require_relative "../solver"
 
-RSpec.describe Solver do
-let(:solve) {Solver.new }
-   it "should return the factorial of the given number" do
-    solve.factorial(5)
+describe Solver do
+  let(:solve) { Solver.new }
 
-    expect(solve.factorial(5)).to eq 120
-   end
+  describe "#factorial" do
+    it "should return the factorial of the given number" do
+      solve.factorial(5)
 
-   it "should return the factorial of the given number" do
-    solve.factorial(1)
+      expect(solve.factorial(5)).to eq 120
+    end
 
-    expect(solve.factorial(1)).to eq 1
-   end
+    it "should return the factorial of the given number" do
+      solve.factorial(1)
 
-   it "should return the factorial of the given number" do
-    solve.factorial(10)
+      expect(solve.factorial(1)).to eq 1
+    end
 
-    expect(solve.factorial(10)).to eq 3628800
-   end
+    it "should return the factorial of the given number" do
+      solve.factorial(10)
 
+      expect(solve.factorial(10)).to eq 3_628_800
+    end
+  end
 
 end
-
