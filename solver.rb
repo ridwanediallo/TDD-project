@@ -1,7 +1,7 @@
 class Solver
 
-    def factorial
-        
+    def reverse(string)
+        string.reverse
     end
 
 end

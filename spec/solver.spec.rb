@@ -19,33 +19,33 @@ describe Solver do
 
   describe "#reverse" do
     it "should reverse the given string" do
-      expect(solve.reverse("hello")).to be("olleh")
+      expect(solve.reverse("hello")).to eq("olleh")
     end
 
     it "should reverse the given string" do
-      expect(solve.reverse("rich")).to be("hcir")
+      expect(solve.reverse("rich")).to eq("hcir")
     end
 
     it "should reverse the given string" do
-      expect(solve.reverse("ridwan")).to be("nawdir")
+      expect(solve.reverse("ridwan")).to eq("nawdir")
     end
   end
 
   describe "#fizzbuzz" do
     it "should return the correct string" do
-      expect(solve.fizzbuzz(3)).to be("fizz")
+      expect(solve.fizzbuzz(3)).to eq("fizz")
     end
 
     it "should return the correct string" do
-      expect(solve.fizzbuzz(5)).to be("buzz")
+      expect(solve.fizzbuzz(5)).to eq("buzz")
     end
 
     it "should return the correct string" do
-      expect(solve.fizzbuzz(15)).to be("fizzbuzz")
+      expect(solve.fizzbuzz(15)).to eq("fizzbuzz")
     end
 
     it "should return the correct string" do
-      expect(solve.fizzbuzz(7)).to be("7")
+      expect(solve.fizzbuzz(7)).to eq("7")
     end
   end
 end
