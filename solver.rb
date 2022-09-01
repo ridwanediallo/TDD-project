@@ -15,4 +15,14 @@ class Solver
             number.to_s
         end
     end
+
+    def factorial(number)
+        if number == 0 || number == 1
+            1
+        elsif number < 0
+         raise  "Please enter a positive Integer"
+        else
+            number * factorial(number - 1)
+        end
+    end
 end
