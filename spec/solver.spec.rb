@@ -33,22 +33,19 @@ describe Solver do
 
   describe "#fizzbuzz" do
     it "should return the correct string" do
-        expect(solve.fizzbuzz(3)).to be("fizz")
+      expect(solve.fizzbuzz(3)).to be("fizz")
     end
 
     it "should return the correct string" do
-        expect(solve.fizzbuzz(5)).to be("buzz")
+      expect(solve.fizzbuzz(5)).to be("buzz")
     end
 
     it "should return the correct string" do
-        expect(solve.fizzbuzz(15)).to be("fizzbuzz")
+      expect(solve.fizzbuzz(15)).to be("fizzbuzz")
     end
 
     it "should return the correct string" do
-        expect(solve.fizzbuzz(7)).to be("7")
+      expect(solve.fizzbuzz(7)).to be("7")
     end
-
-    end
-
   end
 end
